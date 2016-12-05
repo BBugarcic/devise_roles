@@ -1,0 +1,11 @@
+.wide-form
+  = form_for :article do |f|
+    %h3 New Article
+    .form-group
+      = f.label :title
+      = f.text_field  :text, class: 'form-control', placeholder: :title
+    .form-group
+      = f.label :title
+      = f.text_area :text, class: 'form-control', rows: 3, placeholder: :text
+    .form-group
+      = f.submit 'Submit', :class => 'btn btn-primary'
